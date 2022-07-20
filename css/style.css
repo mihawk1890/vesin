@@ -1112,6 +1112,9 @@ p {
   position: absolute;
   left: 0;
 }
+.page-abountus .abount-us3 {
+  padding: 6rem 0;
+}
 
 @media screen and (min-width: 1024px) {
   .container {
