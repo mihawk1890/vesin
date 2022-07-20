@@ -1233,6 +1233,37 @@ p {
     align-items: flex-start;
   }
 }
+.header .menu-item {
+  position: relative;
+}
+.header .menu-item .sub-menu {
+  transition: all 0.4s;
+  position: absolute;
+  top: 100%;
+  left: -9px;
+  background-color: #fafafa;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  width: 25rem;
+}
+.header .menu-item .sub-menu li {
+  margin-bottom: 1rem;
+}
+.header .menu-item .sub-menu li a {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+.header .menu-item .sub-menu li a:hover {
+  color: #ca0020;
+}
+.header .menu-item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
 @media screen and (max-width: 1023px) {
   .header .menu-item {
     padding: 1rem 0;
@@ -1242,20 +1273,22 @@ p {
   color: #0f1133;
   font-weight: 500;
   position: relative;
+  display: block;
+  padding: 2rem 0;
 }
 .header .menu-item.active a {
   color: #ca0020;
 }
-.header .menu-item a:hover {
+.header .menu-item > a:hover {
   color: #ca0020;
   font-weight: 500;
   position: relative;
 }
-.header .menu-item a::after {
+.header .menu-item > a::after {
   content: "";
   position: absolute;
   display: block;
-  bottom: -5px;
+  bottom: 10px;
   left: 0;
   width: 25px;
   border-top: 2px solid;

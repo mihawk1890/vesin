@@ -43,6 +43,37 @@
       align-items: flex-start;
     }
     &-item {
+      position: relative;
+      .sub-menu {
+        transition: all 0.4s;
+        position: absolute;
+        top: 100%;
+        left: -9px;
+        background-color: #fafafa;
+        z-index: 20;
+        opacity: 0;
+        visibility: hidden;
+        width: 25rem;
+        li{
+          margin-bottom: 1rem;
+          a{
+            display: block;
+            width: 100%;
+            padding: 5px 10px;
+            margin: 0;
+            border-bottom: 1px solid #fff;
+            &:hover{
+              color: $primary-color;
+            }
+          }
+        }
+      }
+      &:hover .sub-menu{
+
+          opacity: 1;
+          visibility: visible;
+      
+      }
       @include respond(tablet) {
         padding: 1rem 0;
       }
@@ -50,21 +81,24 @@
         color: $color-text;
         font-weight: 500;
         position: relative;
+        display: block;
+        padding: 2rem 0;
+
       }
     }
     &-item.active a {
       color: $primary-color;
     }
-    &-item a:hover {
+    &-item>a:hover {
       color: $primary-color;
       font-weight: 500;
       position: relative;
     }
-    &-item a::after {
+    &-item>a::after {
       content: '';
       position: absolute;
       display: block;
-      bottom: -5px;
+      bottom: 10px;
       left: 0;
       width: 25px;
       border-top: 2px solid;
@@ -145,8 +179,8 @@
         flex-shrink: 0;
       }
       h3 {
-        padding-left: .8rem;
-        flex:1;
+        padding-left: 0.8rem;
+        flex: 1;
         font-size: 1.4rem;
         color: $primary-color;
       }
