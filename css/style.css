@@ -1121,64 +1121,64 @@ p {
     max-width: 1200px;
   }
 }
-.page-contact .container {
+.page-contact .page-content .container {
   padding-bottom: 5rem;
 }
-.page-contact .container .title {
+.page-contact .page-content .container .title {
   text-align: center;
   font-size: 4rem;
   margin: 5rem 0;
-  color: #262161;
+  color: #0f1133;
 }
-.page-contact .container .subscribe {
+.page-contact .page-content .container .subscribe {
   padding: 3rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 2.5rem 0 2.5rem 0;
 }
-.page-contact .container .subscribe .subscribe-field {
+.page-contact .page-content .container .subscribe .subscribe-field {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.page-contact .container .subscribe .subscribe-field .subscribe-input {
+.page-contact .page-content .container .subscribe .subscribe-field .subscribe-input {
   margin: 1rem 0;
   padding: 1rem;
   border: 2px solid rgba(128, 128, 128, 0.5);
   border-radius: 1rem;
 }
-.page-contact .container .subscribe .subscribe-button {
-  background-color: #262161;
+.page-contact .page-content .container .subscribe .subscribe-button {
+  background-color: #0f1133;
   color: #fff;
   padding: 1rem;
   border-radius: 6px;
 }
-.page-contact .container .item {
+.page-contact .page-content .container .item {
   padding: 3.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 2.5rem 0 2.5rem 0;
-  background-color: #262161;
+  background-color: #0f1133;
   color: #fff;
 }
-.page-contact .container .item .item-title {
+.page-contact .page-content .container .item .item-title {
   padding-bottom: 2rem;
   font-size: 1.9rem;
 }
-.page-contact .container .item .item-content .item-address {
+.page-contact .page-content .container .item .item-content .item-address {
   color: #fff;
   padding-bottom: 1.9rem;
 }
-.page-contact .container .item .item-content .item-email {
+.page-contact .page-content .container .item .item-content .item-email {
   color: #fff;
   padding-bottom: 1.9rem;
 }
-.page-contact .container .item .item-content .item-phone {
+.page-contact .page-content .container .item .item-content .item-phone {
   color: #fff;
 }
-.page-contact .container-fluid {
+.page-contact .page-content .container-fluid {
   padding: 0;
 }
 @media (max-width: 767.98px) {
-  .page-contact .container .subscribe {
+  .page-contact .page-content .container .subscribe {
     margin-bottom: 5rem;
   }
 }

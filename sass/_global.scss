@@ -826,7 +826,7 @@ p {
 
 // page contact
 .page-contact {
-  .container {
+  .page-content{.container {
     padding-bottom: 5rem;
     .title {
       text-align: center;
@@ -890,7 +890,8 @@ p {
         margin-bottom: 5rem;
       }
     }
-  }
+  }}
+  
 }
 
 // page contact
