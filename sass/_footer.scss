@@ -1,0 +1,127 @@
+.footer {
+  background-image: url(../images/bg-thongke.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0 0;
+  &-col {
+    @include respond(tablet) {
+      padding-bottom: 2rem;
+    }
+    &-title {
+      font-size: 2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+    &-content {
+      p {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        color: #fff;
+        margin-bottom: 1rem;
+        &:nth-of-type(4),
+        &:nth-of-type(5) {
+          padding-left: 2rem;
+          position: relative;
+        }
+        &:nth-of-type(4)::before {
+          @include fa5('\f8d3');
+          position: absolute;
+          left: 0;
+        }
+        &:nth-of-type(5)::before {
+          @include fa5('\f0e0');
+          position: absolute;
+          left: 0;
+        }
+      }
+    }
+    & .social-network {
+      &__title {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+      }
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        & li + li {
+          margin-left: 0.6rem;
+        }
+        a {
+          color: #fff;
+          font-size: 1.8rem;
+        }
+      }
+    }
+    & .menu-footer {
+      &__link {
+        position: relative;
+        padding-left: 2rem;
+        &::before {
+          @include fa5('\f058');
+          position: absolute;
+          left: 0;
+          top: 4px;
+        }
+
+        a {
+          display: block;
+          color: #fff;
+          line-height: 2.2rem;
+          margin-bottom: 1.5rem;
+          &:hover {
+            color: $secondery;
+          }
+        }
+      }
+    }
+  }
+  &-copyright {
+    border-top: 1px solid #ffffff59;
+    padding: 0.5rem 1.5rem;
+    margin-top: 20px;
+    p {
+      text-align: center;
+      color: #fff;
+    }
+  }
+}
+.button-contact {
+  position: fixed;
+  z-index: 10;
+  width: 4rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+
+  &__link {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--hotline {
+      background-color: $color-text;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}
