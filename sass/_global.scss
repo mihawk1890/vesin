@@ -6,34 +6,34 @@ $primary-color: #ca0020;
 $secondery: #fba311;
 @mixin fa5($icon) {
   content: $icon;
-  font-family: 'Font Awesome 5 Pro';
+  font-family: "Font Awesome 5 Pro";
 }
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: local(''), url('../fonts/SVN-Poppins-Regular.ttf') format('truetype');
+  src: local(""), url("../fonts/SVN-Poppins-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
 
-  src: local(''), url('../fonts/SVN-Poppins-Medium.ttf') format('truetype');
+  src: local(""), url("../fonts/SVN-Poppins-Medium.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: local(''), url('../fonts/SVN-Poppins-Bold.ttf') format('truetype');
+  src: local(""), url("../fonts/SVN-Poppins-Bold.ttf") format("truetype");
 }
 
 body {
   font-size: 1.4rem;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 a:hover {
   color: $color-text;
@@ -62,7 +62,7 @@ p {
     object-position: 50% 50%;
     -o-object-fit: cover;
     object-fit: cover;
-    font-family: 'object-fit: cover;';
+    font-family: "object-fit: cover;";
   }
 }
 .owl-next:focus,
@@ -86,7 +86,7 @@ p {
     z-index: -1;
   }
   &-bg::before {
-    content: '';
+    content: "";
     position: absolute;
     background: linear-gradient(
       146deg,
@@ -110,7 +110,7 @@ p {
       position: relative;
     }
     h6::before {
-      content: '';
+      content: "";
       height: 1px;
       width: 50px;
       top: 6px;
@@ -214,7 +214,7 @@ p {
     color: $color-text;
     margin-bottom: 4rem;
     &:before {
-      content: '';
+      content: "";
       height: 1px;
       width: 50px;
       top: 8px;
@@ -305,7 +305,7 @@ p {
       font-weight: 700;
       margin-bottom: 1rem;
       &--than::before {
-        content: '+';
+        content: "+";
       }
     }
     &__text {
@@ -313,7 +313,7 @@ p {
       font-weight: 500;
     }
     &::before {
-      content: '';
+      content: "";
       left: 50%;
       bottom: 0;
       -webkit-transform: translate(-50%, 0);
@@ -378,7 +378,7 @@ p {
           background-image: linear-gradient(to right, #657fee, #0bdfac);
           text-transform: uppercase;
           &::before {
-            @include fa5('\f078');
+            @include fa5("\f078");
             position: absolute;
             right: 1.5rem;
             font-weight: 300;
@@ -386,7 +386,7 @@ p {
           &.collapsed {
             background: $color-text;
             &::before {
-              @include fa5('\f067');
+              @include fa5("\f067");
             }
           }
         }
@@ -410,7 +410,7 @@ p {
     padding-bottom: 3rem;
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     background-color: #1c1959;
     height: 100%;
@@ -426,7 +426,7 @@ p {
       display: inline-block;
       &::before,
       &::after {
-        content: '';
+        content: "";
         height: 1px;
         width: 5rem;
         top: 6px;
@@ -456,7 +456,7 @@ p {
     &-item {
       position: relative;
       & + &::before {
-        content: '';
+        content: "";
         background-image: url(../images/feature-arrow.svg);
         background-size: cover;
         position: absolute;
@@ -592,7 +592,7 @@ p {
     li.active a {
       color: #ca0020 !important;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         display: block;
         bottom: -5px;
@@ -654,7 +654,7 @@ p {
         }
       }
     }
-    & input[type='submit'] {
+    & input[type="submit"] {
       margin-top: auto;
       background-color: $primary-color;
       color: #fff;
@@ -675,16 +675,16 @@ p {
     left: 0;
   }
 }
+.page-wrapper {
+  .page-banner {
 
-.page-wrapper{
-  .page-banner{
     height: 25rem;
     position: relative;
     display: flex;
     padding: 30px 0;
     background: var(--theme-color);
     overflow: hidden;
-    &::before{
+    &::before {
       content: "";
       position: absolute;
       @include box(100%);
@@ -817,8 +817,80 @@ p {
     padding: 6rem 0;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1200px;
   }
 }
+
+// page contact
+.page-contact {
+  .container {
+    padding-bottom: 5rem;
+    .title {
+      text-align: center;
+      font-size: 4rem;
+      margin: 5rem 0;
+      color: $color-text;
+    }
+    .subscribe {
+      padding: 3rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 2.5rem 0 2.5rem 0;
+      .subscribe-field {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .subscribe-input {
+          margin: 1rem 0;
+          padding: 1rem;
+          border: 2px solid rgba(128, 128, 128, 0.5);
+          border-radius: 1rem;
+        }
+      }
+      .subscribe-button {
+        background-color: $color-text;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 6px;
+      }
+    }
+    .item {
+      padding: 3.5rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border-radius: 2.5rem 0 2.5rem 0;
+      background-color: $color-text;
+      color: #fff;
+      .item-title {
+        padding-bottom: 2rem;
+        font-size: 1.9rem;
+      }
+      .item-content {
+        .item-address {
+          color: #fff;
+          padding-bottom: 1.9rem;
+        }
+        .item-email {
+          color: #fff;
+          padding-bottom: 1.9rem;
+        }
+        .item-phone {
+          color: #fff;
+        }
+      }
+    }
+  }
+  .container-fluid{
+    padding: 0;
+  }
+  @include media-breakpoint-down(sm){
+    .container{
+      .subscribe{
+        margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+// page contact
