@@ -67,4 +67,22 @@ $(document).ready(function () {
     $grid.isotope({ filter: filterValue });
     e.preventDefault();
   });
+  
+  $('.abount-us2 .slider').owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 20,
+    nav: true,
+    dots: false,
+    stagePadding: 0,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsiveClass: true,
+    responsiveRefreshRate: true,
+    navText: [
+      "<i class='fal fa-angle-left'></i>",
+      "<i class='fal fa-angle-right'></i>",
+    ],
+  });
 });

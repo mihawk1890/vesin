@@ -213,7 +213,7 @@ body {
 }
 
 a:hover {
-  color: #262161;
+  color: #0f1133;
 }
 
 p {
@@ -396,7 +396,7 @@ p {
   position: relative;
   text-transform: uppercase;
   font-weight: 500;
-  color: #262161;
+  color: #0f1133;
   margin-bottom: 4rem;
 }
 .aboutus h6:before {
@@ -406,7 +406,7 @@ p {
   top: 8px;
   left: 0;
   position: absolute;
-  background: #262161;
+  background: #0f1133;
   opacity: 0.6;
 }
 .aboutus .col-content p {
@@ -536,10 +536,10 @@ p {
     width: 100%;
   }
 }
-.why-choose .owl-carousel {
+.why-choose.owl-carousel {
   padding: 0 30px;
 }
-.why-choose .owl-carousel .owl-nav button.owl-prev {
+.why-choose.owl-carousel .owl-nav button.owl-prev {
   background: transparent;
   border: 0;
   left: -1.5rem;
@@ -548,7 +548,7 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
-.why-choose .owl-carousel .owl-nav button.owl-next {
+.why-choose.owl-carousel .owl-nav button.owl-next {
   background: transparent;
   border: 0;
   right: -1.5rem;
@@ -557,13 +557,13 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
-.why-choose .owl-carousel .owl-nav button.owl-prev:hover,
-.why-choose .owl-carousel .owl-nav button.owl-next:hover {
+.why-choose.owl-carousel .owl-nav button.owl-prev:hover,
+.why-choose.owl-carousel .owl-nav button.owl-next:hover {
   background-color: transparent;
   color: #333;
 }
-.why-choose .owl-carousel .owl-nav button.owl-prev i,
-.why-choose .owl-carousel .owl-nav button.owl-next i {
+.why-choose.owl-carousel .owl-nav button.owl-prev i,
+.why-choose.owl-carousel .owl-nav button.owl-next i {
   background: #fafafa;
   border: 1px solid #ccc;
   width: 3.5rem;
@@ -577,7 +577,7 @@ p {
 }
 .why-choose__heading h2 {
   font-size: 3.6rem;
-  color: #262161;
+  color: #0f1133;
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -604,7 +604,7 @@ p {
   text-align: left;
   border-radius: 0 22.5px 0 0;
   width: 100%;
-  background-color: #262161;
+  background-color: #0f1133;
   color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
@@ -619,7 +619,7 @@ p {
   font-weight: 300;
 }
 .why-choose__accordion .card-header .btn-link.collapsed {
-  background: #262161;
+  background: #0f1133;
 }
 .why-choose__accordion .card-header .btn-link.collapsed::before {
   content: "\f067";
@@ -754,7 +754,7 @@ p {
 }
 .customer-title {
   font-size: 3.6rem;
-  color: #262161;
+  color: #0f1133;
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -849,7 +849,7 @@ p {
 .quote-form {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  background-color: #262161;
+  background-color: #0f1133;
 }
 .quote-form form {
   max-width: 90%;
@@ -937,6 +937,16 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.page-wrapper .page-banner .container {
+  z-index: 2;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 .page-wrapper .bg-fill {
   background-size: cover !important;
@@ -956,6 +966,151 @@ p {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
+}
+.page-wrapper .page-title {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.page-wrapper .breadcrumb {
+  background: transparent;
+  justify-content: center;
+}
+.page-wrapper .breadcrumb-item {
+  color: #fff;
+  text-transform: uppercase;
+}
+.page-wrapper .breadcrumb-item + .breadcrumb-item::before {
+  color: #fff;
+  padding-left: 0.5rem;
+}
+.page-wrapper .breadcrumb-item a {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.page-abountus .abount-us1 {
+  padding: 6rem 0;
+}
+.page-abountus .abount-us1 h2 {
+  font-size: 3.4rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.page-abountus .abount-us1 h3 {
+  font-size: 2.6rem;
+  margin-bottom: 1.5rem;
+}
+.page-abountus .abount-us1 h3 strong {
+  color: #0f1133;
+}
+.page-abountus .abount-us1 p {
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.page-abountus .abount-us1 .image {
+  border-radius: 6px;
+  border: 5px solid #fff;
+  box-shadow: 2px 2px 4px 2px #ddd;
+}
+.page-abountus .abount-us1 .image.image-cover {
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 75%;
+}
+.page-abountus .abount-us1 .image.image-cover img {
+  right: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+}
+.page-abountus .abount-us1 .image img {
+  border-radius: 6px;
+}
+.page-abountus .abount-us2 {
+  background: #f7f7f7;
+  padding: 6rem 0;
+}
+.page-abountus .abount-us2 .slider.owl-carousel {
+  padding: 0 30px;
+}
+.page-abountus .abount-us2 .slider.owl-carousel .owl-nav button.owl-prev {
+  background: transparent;
+  border: 0;
+  left: -1.5rem;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.page-abountus .abount-us2 .slider.owl-carousel .owl-nav button.owl-next {
+  background: transparent;
+  border: 0;
+  right: -1.5rem;
+  transition: all 0.5s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.page-abountus .abount-us2 .slider.owl-carousel .owl-nav button.owl-prev:hover,
+.page-abountus .abount-us2 .slider.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: transparent;
+  color: #333;
+}
+.page-abountus .abount-us2 .slider.owl-carousel .owl-nav button.owl-prev i,
+.page-abountus .abount-us2 .slider.owl-carousel .owl-nav button.owl-next i {
+  background: #fafafa;
+  border: 1px solid #ccc;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 4px;
+  font-size: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.page-abountus .abount-us2 .slider-item h3 {
+  font-size: 2.4rem;
+  color: #0f1133;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.page-abountus .abount-us2 .slider-item strong {
+  color: #ca0020;
+}
+.page-abountus .abount-us2 .slider-item .box-text {
+  padding-left: 6rem;
+  position: relative;
+}
+.page-abountus .abount-us2 .slider-item .box-text::before {
+  content: "";
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  background: url(../images/ic-baove.png) no-repeat center;
+  background-size: contain;
+  position: absolute;
+  left: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1019,7 +1174,7 @@ p {
   }
 }
 .header .menu-item a {
-  color: #262161;
+  color: #0f1133;
   font-weight: 500;
   position: relative;
 }
@@ -1083,20 +1238,31 @@ p {
   height: 8rem;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .top-bar--left {
-  width: 70%;
+  width: 100%;
 }
 .top-bar .lists-item {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   padding: 0.5rem 0;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.top-bar .lists-item .item-box {
+  display: flex;
+  align-items: center;
 }
 .top-bar .lists-item .item-box img {
-  max-width: 3rem;
+  width: 3rem;
+  flex-shrink: 0;
 }
 .top-bar .lists-item .item-box h3 {
-  font-size: 1.2rem;
+  padding-left: 0.8rem;
+  flex: 1;
+  font-size: 1.4rem;
   color: #ca0020;
 }
 .top-bar--right {
@@ -1253,7 +1419,7 @@ p {
   justify-content: center;
 }
 .button-contact__link--hotline {
-  background-color: #262161;
+  background-color: #0f1133;
 }
 .button-contact__link--hotline img {
   width: 2.5rem;

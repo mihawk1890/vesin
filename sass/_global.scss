@@ -1,7 +1,7 @@
 html {
   font-size: 62.5%;
 }
-$color-text: #262161;
+$color-text: #0f1133;
 $primary-color: #ca0020;
 $secondery: #fba311;
 @mixin fa5($icon) {
@@ -43,48 +43,7 @@ p {
   line-height: 2.2rem;
   color: #333;
 }
-@mixin owl($leftright) {
-  .owl-carousel {
-    padding: 0 30px;
-    .owl-nav button.owl-prev {
-      background: transparent;
-      border: 0;
-      left: $leftright;
-      transition: all 0.5s;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .owl-nav button.owl-next {
-      background: transparent;
-      border: 0;
-      right: $leftright;
-      transition: all 0.5s;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-    .owl-nav button.owl-prev,
-    .owl-nav button.owl-next {
-      &:hover {
-        background-color: transparent;
-        color: #333;
-      }
-      i {
-        background: #fafafa;
-        border: 1px solid #ccc;
-        width: 3.5rem;
-        height: 3.5rem;
-        border-radius: 4px;
-        font-size: 2.5rem;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-      }
-    }
-  }
-}
+
 .images-cover {
   position: relative;
   height: auto;
@@ -716,6 +675,7 @@ p {
     left: 0;
   }
 }
+
 .page-wrapper{
   .page-banner{
     height: 25rem;
@@ -728,8 +688,19 @@ p {
       content: "";
       position: absolute;
       @include box(100%);
+      inset: 0;
+      background: rgb(0 0 0 / 40%);
+      z-index: 1;
+    }.container{
+      z-index: 2;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
     }
+    
   }
+  
   .bg-fill {
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -749,9 +720,100 @@ p {
       flex-flow: column wrap;
     }
   }
+  
+  .page-title{
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .breadcrumb{
+    background: transparent;
+    justify-content: center;
+    &-item{
+      color: #fff;
+      text-transform: uppercase;
+      & + .breadcrumb-item::before{
+        color: #fff;
+        padding-left: 0.5rem;
+      }
+      a{
+        color: #fff;
+        font-size: 1.4rem;
+        
+      }
+    }
+  }
 }
-
-
+.page-abountus{
+  .abount-us1{
+    padding: 6rem 0;
+    h2{
+      font-size: 3.4rem;
+      color: #000;
+      text-align: center;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    h3{
+      font-size: 2.6rem;
+      margin-bottom: 1.5rem;
+      strong{
+        color: $color-text;
+      }
+    }
+    p{
+      line-height: 2.4rem;
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+    .image{
+      @include img-cover(75%);
+      border-radius: 6px;
+      border: 5px solid #fff;
+      box-shadow: 2px 2px 4px 2px #ddd;
+      img{
+        border-radius: 6px;
+      }
+    }
+  }
+  .abount-us2{
+    background: #f7f7f7;
+    padding: 6rem 0;
+    .slider{
+      @include owl(-1.5rem);
+      &-item{
+        h3{
+          font-size: 2.4rem;
+          color: $color-text;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 2rem;
+        }
+        strong{
+          color:$primary-color;
+        }
+        .box-text{
+          padding-left: 6rem;
+          position: relative;
+          &::before{
+            content: "";
+            display: block;
+            @include box(5rem);
+            background: url(../images/ic-baove.png) no-repeat center;
+            background-size: contain;
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1200px;

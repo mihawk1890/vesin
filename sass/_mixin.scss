@@ -33,6 +33,7 @@
 
 @mixin owl($leftright) {
   &.owl-carousel {
+    padding: 0 30px;
     .owl-nav button.owl-prev {
       background: transparent;
       border: 0;
@@ -41,9 +42,6 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      @include media-breakpoint-down(md) {
-        left: -0.5rem;
-      }
     }
     .owl-nav button.owl-next {
       background: transparent;
@@ -53,9 +51,6 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      @include media-breakpoint-down(md) {
-        right: -0.5rem;
-      }
     }
     .owl-nav button.owl-prev,
     .owl-nav button.owl-next {
@@ -66,9 +61,10 @@
       i {
         background: #fafafa;
         border: 1px solid #ccc;
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 4px;
+        font-size: 2.5rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
