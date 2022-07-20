@@ -40,16 +40,13 @@ $(document).ready(function () {
     $(window).scroll(function () {
       var pos_body = $('html,body').scrollTop();
       if (pos_body > 170) {
-        $('.header').addClass('stuck');
+        $('.top-bar').addClass('stuck');
       } else if (pos_body <= 0) {
-        $('.header').removeClass('stuck');
+        $('.top-bar').removeClass('stuck');
       }
     });
   }
-  // var $grid = $('.customer-list').isotope({
-  //   itemSelector: '.customer-item',
-  //   percentPosition: true,
-  // });
+
   var itemSelector = '.customer-item';
 
   var $grid = $('.customer-list').isotope({
