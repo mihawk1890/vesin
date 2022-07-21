@@ -220,6 +220,7 @@ p {
   font-size: 1.4rem;
   line-height: 2.2rem;
   color: #333;
+  font-weight: normal;
 }
 
 .images-cover {
@@ -1112,8 +1113,115 @@ p {
   position: absolute;
   left: 0;
 }
-.page-abountus .abount-us3 {
-  padding: 6rem 0;
+.page-abountus .history {
+  padding: 10rem 0;
+  background: url(../images/cong-ty-ve-sinh-tkt-cleaning-tphcm.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -2;
+}
+.page-abountus .history-title {
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.page-abountus .history::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.page-abountus .history .container {
+  max-width: 1600px;
+}
+.page-abountus .history .time-line {
+  margin: 40rem 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+.page-abountus .history .time-line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  top: 0;
+  border-radius: 10rem;
+  background: linear-gradient(to right, #0f1133, #ca0020);
+}
+.page-abountus .history .time-line li {
+  width: 14.2857142857%;
+  position: relative;
+}
+.page-abountus .history .time-line__date {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #0f1133;
+  border: 1rem solid #0f1133;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 3rem;
+}
+.page-abountus .history .time-line__date::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 13px solid #0f1133;
+  top: -2rem;
+}
+.page-abountus .history .time-line__content {
+  position: absolute;
+  bottom: calc(100% + 3rem);
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 1px rgba(250, 250, 250, 0.5);
+}
+.page-abountus .history .time-line__content::before {
+  content: "";
+  width: 3px;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -3rem;
+  background: #0f1133;
+}
+.page-abountus .history .time-line li:nth-of-type(even) .time-line__date {
+  bottom: calc(100% + 3rem);
+  top: unset;
+}
+.page-abountus .history .time-line li:nth-of-type(even) .time-line__date::before {
+  border-top: 13px solid #0f1133;
+  border-bottom: none;
+  top: calc(100% + 0.8rem);
+}
+.page-abountus .history .time-line li:nth-of-type(even) .time-line__content {
+  top: 3rem;
+  bottom: unset;
+}
+.page-abountus .history .time-line li:nth-of-type(even) .time-line__content::before {
+  bottom: 100%;
+  background: #0f1133;
 }
 
 @media screen and (min-width: 1024px) {

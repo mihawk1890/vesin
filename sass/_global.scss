@@ -6,34 +6,34 @@ $primary-color: #ca0020;
 $secondery: #fba311;
 @mixin fa5($icon) {
   content: $icon;
-  font-family: "Font Awesome 5 Pro";
+  font-family: 'Font Awesome 5 Pro';
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/SVN-Poppins-Regular.ttf") format("truetype");
+  src: local(''), url('../fonts/SVN-Poppins-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
 
-  src: local(""), url("../fonts/SVN-Poppins-Medium.ttf") format("truetype");
+  src: local(''), url('../fonts/SVN-Poppins-Medium.ttf') format('truetype');
 }
 @font-face {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/SVN-Poppins-Bold.ttf") format("truetype");
+  src: local(''), url('../fonts/SVN-Poppins-Bold.ttf') format('truetype');
 }
 
 body {
   font-size: 1.4rem;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 a:hover {
   color: $color-text;
@@ -42,6 +42,7 @@ p {
   font-size: 1.4rem;
   line-height: 2.2rem;
   color: #333;
+  font-weight: normal;
 }
 
 .images-cover {
@@ -62,7 +63,7 @@ p {
     object-position: 50% 50%;
     -o-object-fit: cover;
     object-fit: cover;
-    font-family: "object-fit: cover;";
+    font-family: 'object-fit: cover;';
   }
 }
 .owl-next:focus,
@@ -86,7 +87,7 @@ p {
     z-index: -1;
   }
   &-bg::before {
-    content: "";
+    content: '';
     position: absolute;
     background: linear-gradient(
       146deg,
@@ -110,7 +111,7 @@ p {
       position: relative;
     }
     h6::before {
-      content: "";
+      content: '';
       height: 1px;
       width: 50px;
       top: 6px;
@@ -214,7 +215,7 @@ p {
     color: $color-text;
     margin-bottom: 4rem;
     &:before {
-      content: "";
+      content: '';
       height: 1px;
       width: 50px;
       top: 8px;
@@ -305,7 +306,7 @@ p {
       font-weight: 700;
       margin-bottom: 1rem;
       &--than::before {
-        content: "+";
+        content: '+';
       }
     }
     &__text {
@@ -313,7 +314,7 @@ p {
       font-weight: 500;
     }
     &::before {
-      content: "";
+      content: '';
       left: 50%;
       bottom: 0;
       -webkit-transform: translate(-50%, 0);
@@ -378,7 +379,7 @@ p {
           background-image: linear-gradient(to right, #657fee, #0bdfac);
           text-transform: uppercase;
           &::before {
-            @include fa5("\f078");
+            @include fa5('\f078');
             position: absolute;
             right: 1.5rem;
             font-weight: 300;
@@ -386,7 +387,7 @@ p {
           &.collapsed {
             background: $color-text;
             &::before {
-              @include fa5("\f067");
+              @include fa5('\f067');
             }
           }
         }
@@ -410,7 +411,7 @@ p {
     padding-bottom: 3rem;
   }
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     background-color: #1c1959;
     height: 100%;
@@ -426,7 +427,7 @@ p {
       display: inline-block;
       &::before,
       &::after {
-        content: "";
+        content: '';
         height: 1px;
         width: 5rem;
         top: 6px;
@@ -456,7 +457,7 @@ p {
     &-item {
       position: relative;
       & + &::before {
-        content: "";
+        content: '';
         background-image: url(../images/feature-arrow.svg);
         background-size: cover;
         position: absolute;
@@ -592,7 +593,7 @@ p {
     li.active a {
       color: #ca0020 !important;
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         display: block;
         bottom: -5px;
@@ -654,7 +655,7 @@ p {
         }
       }
     }
-    & input[type="submit"] {
+    & input[type='submit'] {
       margin-top: auto;
       background-color: $primary-color;
       color: #fff;
@@ -677,7 +678,6 @@ p {
 }
 .page-wrapper {
   .page-banner {
-
     height: 25rem;
     position: relative;
     display: flex;
@@ -685,22 +685,22 @@ p {
     background: var(--theme-color);
     overflow: hidden;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       @include box(100%);
       inset: 0;
       background: rgb(0 0 0 / 40%);
       z-index: 1;
-    }.container{
+    }
+    .container {
       z-index: 2;
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: center;
     }
-    
   }
-  
+
   .bg-fill {
     background-size: cover !important;
     background-repeat: no-repeat !important;
@@ -720,8 +720,8 @@ p {
       flex-flow: column wrap;
     }
   }
-  
-  .page-title{
+
+  .page-title {
     font-size: 2.4rem;
     line-height: 2.9rem;
     color: #fff;
@@ -730,28 +730,27 @@ p {
     text-transform: uppercase;
     margin-bottom: 1.5rem;
   }
-  .breadcrumb{
+  .breadcrumb {
     background: transparent;
     justify-content: center;
-    &-item{
+    &-item {
       color: #fff;
       text-transform: uppercase;
-      & + .breadcrumb-item::before{
+      & + .breadcrumb-item::before {
         color: #fff;
         padding-left: 0.5rem;
       }
-      a{
+      a {
         color: #fff;
         font-size: 1.4rem;
-        
       }
     }
   }
 }
-.page-abountus{
-  .abount-us1{
+.page-abountus {
+  .abount-us1 {
     padding: 6rem 0;
-    h2{
+    h2 {
       font-size: 3.4rem;
       color: #000;
       text-align: center;
@@ -759,49 +758,49 @@ p {
       text-transform: uppercase;
       font-weight: 700;
     }
-    h3{
+    h3 {
       font-size: 2.6rem;
       margin-bottom: 1.5rem;
-      strong{
+      strong {
         color: $color-text;
       }
     }
-    p{
+    p {
       line-height: 2.4rem;
       margin-bottom: 1rem;
       text-align: justify;
     }
-    .image{
+    .image {
       @include img-cover(75%);
       border-radius: 6px;
       border: 5px solid #fff;
       box-shadow: 2px 2px 4px 2px #ddd;
-      img{
+      img {
         border-radius: 6px;
       }
     }
   }
-  .abount-us2{
+  .abount-us2 {
     background: #f7f7f7;
     padding: 6rem 0;
-    .slider{
+    .slider {
       @include owl(-1.5rem);
-      &-item{
-        h3{
+      &-item {
+        h3 {
           font-size: 2.4rem;
           color: $color-text;
           font-weight: 700;
           text-transform: uppercase;
           margin-bottom: 2rem;
         }
-        strong{
-          color:$primary-color;
+        strong {
+          color: $primary-color;
         }
-        .box-text{
+        .box-text {
           padding-left: 6rem;
           position: relative;
-          &::before{
-            content: "";
+          &::before {
+            content: '';
             display: block;
             @include box(5rem);
             background: url(../images/ic-baove.png) no-repeat center;
@@ -813,8 +812,118 @@ p {
       }
     }
   }
-  .abount-us3{
-    padding: 6rem 0;
+  .history {
+    padding: 10rem 0;
+    background: url(../images/cong-ty-ve-sinh-tkt-cleaning-tphcm.jpg) no-repeat
+      center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -2;
+    &-title {
+      color: #fff;
+      text-align: center;
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgb(0 0 0 / 70%);
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .container {
+      max-width: 1600px;
+    }
+    .time-line {
+      margin: 40rem 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        top: 0;
+        border-radius: 10rem;
+        background: linear-gradient(to right, $color-text, $primary-color);
+      }
+      li {
+        width: calc(100% / 7);
+        position: relative;
+      }
+
+      &__date {
+        @include box(8rem);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: $color-text;
+        border: 1rem solid $color-text;
+        background: #fff;
+        border-radius: 50%;
+        font-size: 1.8rem;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 3rem;
+        &::before {
+          content: '';
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 13px solid $color-text;
+          top: -2rem;
+        }
+      }
+      &__content {
+        position: absolute;
+        bottom: calc(100% + 3rem);
+        background: #fafafa;
+        padding: 1.5rem;
+        border-radius: 6px;
+        box-shadow: 2px 2px 2px 1px rgb(250 250 250 / 50%);
+        &::before {
+          content: '';
+          width: 3px;
+          height: 3rem;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -3rem;
+          background: $color-text;
+        }
+      }
+      li:nth-of-type(even) {
+        .time-line__date {
+          bottom: calc(100% + 3rem);
+          top: unset;
+          &::before {
+            border-top: 13px solid $color-text;
+            border-bottom: none;
+            top: calc(100% + 0.8rem);
+          }
+        }
+        .time-line__content {
+          top: 3rem;
+          bottom: unset;
+          &::before {
+            bottom: 100%;
+            background: $color-text;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -826,72 +935,73 @@ p {
 
 // page contact
 .page-contact {
-  .page-content{.container {
-    padding-bottom: 5rem;
-    .title {
-      text-align: center;
-      font-size: 4rem;
-      margin: 5rem 0;
-      color: $color-text;
-    }
-    .subscribe {
-      padding: 3rem;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      border-radius: 2.5rem 0 2.5rem 0;
-      .subscribe-field {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        .subscribe-input {
-          margin: 1rem 0;
+  .page-content {
+    .container {
+      padding-bottom: 5rem;
+      .title {
+        text-align: center;
+        font-size: 4rem;
+        margin: 5rem 0;
+        color: $color-text;
+      }
+      .subscribe {
+        padding: 3rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 2.5rem 0 2.5rem 0;
+        .subscribe-field {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          .subscribe-input {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 2px solid rgba(128, 128, 128, 0.5);
+            border-radius: 1rem;
+          }
+        }
+        .subscribe-button {
+          background-color: $color-text;
+          color: #fff;
           padding: 1rem;
-          border: 2px solid rgba(128, 128, 128, 0.5);
-          border-radius: 1rem;
+          border-radius: 6px;
         }
       }
-      .subscribe-button {
+      .item {
+        padding: 3.5rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 2.5rem 0 2.5rem 0;
         background-color: $color-text;
         color: #fff;
-        padding: 1rem;
-        border-radius: 6px;
+        .item-title {
+          padding-bottom: 2rem;
+          font-size: 1.9rem;
+        }
+        .item-content {
+          .item-address {
+            color: #fff;
+            padding-bottom: 1.9rem;
+          }
+          .item-email {
+            color: #fff;
+            padding-bottom: 1.9rem;
+          }
+          .item-phone {
+            color: #fff;
+          }
+        }
       }
     }
-    .item {
-      padding: 3.5rem;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      border-radius: 2.5rem 0 2.5rem 0;
-      background-color: $color-text;
-      color: #fff;
-      .item-title {
-        padding-bottom: 2rem;
-        font-size: 1.9rem;
-      }
-      .item-content {
-        .item-address {
-          color: #fff;
-          padding-bottom: 1.9rem;
-        }
-        .item-email {
-          color: #fff;
-          padding-bottom: 1.9rem;
-        }
-        .item-phone {
-          color: #fff;
+    .container-fluid {
+      padding: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      .container {
+        .subscribe {
+          margin-bottom: 5rem;
         }
       }
     }
   }
-  .container-fluid{
-    padding: 0;
-  }
-  @include media-breakpoint-down(sm){
-    .container{
-      .subscribe{
-        margin-bottom: 5rem;
-      }
-    }
-  }}
-  
 }
 
 // page contact
