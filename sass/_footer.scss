@@ -20,6 +20,7 @@
         line-height: 2.2rem;
         color: #fff;
         margin-bottom: 1rem;
+        text-align: justify;
         &:nth-of-type(4),
         &:nth-of-type(5) {
           padding-left: 2rem;
@@ -72,6 +73,7 @@
           color: #fff;
           line-height: 2.2rem;
           margin-bottom: 1.5rem;
+          text-align: justify;
           &:hover {
             color: $secondery;
           }

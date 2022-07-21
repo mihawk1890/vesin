@@ -612,14 +612,13 @@ p {
   background-color: $color-text;
 
   & form {
-    max-width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem 3rem;
     margin: auto;
     @include respond(tablet) {
       grid-template-columns: repeat(2, 1fr);
-      max-width: 100%;
     }
     @include respond(phone) {
       grid-template-columns: repeat(1, 1fr);
@@ -814,8 +813,7 @@ p {
   }
   .history {
     padding: 10rem 0;
-    background: url(../images/cong-ty-ve-sinh-tkt-cleaning-tphcm.jpg) no-repeat
-      center;
+    background: url(../images/bg-abount.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -831,7 +829,7 @@ p {
       content: '';
       position: absolute;
       inset: 0;
-      background: rgb(0 0 0 / 70%);
+      background: rgb(0 0 0 / 80%);
       width: 100%;
       height: 100%;
       z-index: -1;

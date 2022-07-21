@@ -853,7 +853,7 @@ p {
   background-color: #0f1133;
 }
 .quote-form form {
-  max-width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem 3rem;
@@ -862,7 +862,6 @@ p {
 @media screen and (max-width: 1023px) {
   .quote-form form {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1115,7 +1114,7 @@ p {
 }
 .page-abountus .history {
   padding: 10rem 0;
-  background: url(../images/cong-ty-ve-sinh-tkt-cleaning-tphcm.jpg) no-repeat center;
+  background: url(../images/bg-abount.png) no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -1132,7 +1131,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -1669,6 +1668,7 @@ p {
   line-height: 2.2rem;
   color: #fff;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 .footer-col-content p:nth-of-type(4), .footer-col-content p:nth-of-type(5) {
   padding-left: 2rem;
@@ -1719,6 +1719,7 @@ p {
   color: #fff;
   line-height: 2.2rem;
   margin-bottom: 1.5rem;
+  text-align: justify;
 }
 .footer-col .menu-footer__link a:hover {
   color: #fba311;
