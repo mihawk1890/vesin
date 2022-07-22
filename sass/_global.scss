@@ -41,6 +41,7 @@ a:hover {
 p {
   font-size: 1.4rem;
   line-height: 2.2rem;
+  margin-bottom: 0.8rem;
   color: #333;
   font-weight: normal;
 }
@@ -1435,6 +1436,31 @@ p {
   }
 }
 // End recruit-item
+.blog-service .nav-tabs {
+  margin-bottom: 2rem;
+  border: 0;
+  gap: 1.5rem;
+  .nav-item {
+    border: 0;
+    font-weight: 1.6rem;
+    font-weight: 700;
+    color: $color-text;
+    &.active {
+      color: $primary-color;
+      position: relative;
+      &::before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: $primary-color;
+        display: inline-block;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+      }
+    }
+  }
+}
 .pagination {
   margin-top: 1.5rem;
   justify-content: center;
@@ -1458,5 +1484,98 @@ p {
     border-radius: 4px;
     font-weight: 700;
     transition: all 0.3s ease;
+  }
+}
+.procedure {
+  padding: 3rem 0;
+  &-title {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: $color-text;
+  }
+  &-img {
+    @include img-cover(100%);
+  }
+  .procedure-list {
+    position: relative;
+    &::before {
+      content: '';
+      width: 1px;
+      height: 100%;
+      background: #0f1133;
+      display: inline-block;
+      position: absolute;
+      left: 6px;
+      z-index: -1;
+    }
+  }
+  .procedure-item {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+    &::before {
+      @include fa5('\f192');
+      position: absolute;
+      left: 0;
+      top: 3px;
+    }
+    strong {
+      color: $color-text;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+  }
+}
+.outstanding-project {
+  padding: 3rem 0 5rem;
+  .project-title {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: $color-text;
+  }
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+  .project-item {
+    box-shadow: 3px 3px 3px 0px #ddd;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover .project-image {
+      transform: scale(1.1);
+    }
+  }
+
+  .project-image {
+    @include img-cover(56.25%);
+    border-radius: 6px;
+    z-index: 1;
+    transition: all 0.3s ease;
+    &::before {
+      content: '';
+      @include box(100%);
+      background: linear-gradient(358deg, #0f1133, rgb(15 17 51 / 10%));
+      display: block;
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+  }
+  .project-name {
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    font-weight: 600;
   }
 }
