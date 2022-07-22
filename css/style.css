@@ -1319,15 +1319,14 @@ p {
   position: relative;
 }
 .customer1 .customer-banner-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
   transition: all 0.5s ease-in-out;
 }
 .customer1 .customer-banner-grid img:hover {
   transform: scale(1.1);
-}
-.customer1 .customer-banner-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .customer1 .customer-banner-grid .text-box {
   position: absolute;
@@ -1399,6 +1398,11 @@ p {
     display: flex;
     flex-direction: column;
   }
+  .customer1 .customer-banner-grid .customer-banner-grid-item img {
+    width: 100%;
+    min-height: 320px;
+    object-fit: cover;
+  }
   .customer1 .customer-banner-grid .customer-banner-grid-item .text-box .text-box-sm {
     font-size: 1rem;
   }
@@ -1409,6 +1413,112 @@ p {
     font-size: 1.5rem;
   }
   .customer1 .customer-banner-grid .customer-banner-grid-item .text-box2 .text-box-lg3 {
+    font-size: 2rem;
+  }
+}
+
+.service {
+  padding: 3rem 0;
+}
+.service .service-banner-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: "h1 h1 h2" "h3 h4 h2" "h3 h4 h5" "h6 h6 h6";
+}
+.service .service-banner-grid .service-banner-grid-item:first-child {
+  grid-area: h1;
+}
+.service .service-banner-grid .service-banner-grid-item:nth-child(2) {
+  grid-area: h2;
+}
+.service .service-banner-grid .service-banner-grid-item:nth-child(3) {
+  grid-area: h3;
+}
+.service .service-banner-grid .service-banner-grid-item:nth-child(4) {
+  grid-area: h4;
+}
+.service .service-banner-grid .service-banner-grid-item:nth-child(5) {
+  grid-area: h5;
+}
+.service .service-banner-grid .service-banner-grid-item:last-child {
+  grid-area: h6;
+  height: 11.2rem;
+}
+.service .service-banner-grid .service-banner-grid-item {
+  overflow: hidden;
+  position: relative;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: all 0.5s ease-in-out;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-bg:hover {
+  transform: scale(1.1);
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  padding: 0 2rem;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box .text-box-title {
+  color: #353030;
+  font-size: 2.465rem;
+  font-weight: 500;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box .text-box-sub-title {
+  color: #353030;
+  font-size: 1.275rem;
+  font-weight: 500;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box .text-box-button {
+  color: #ca0020;
+  font-size: 1.105rem;
+  font-weight: 500;
+  border: 2px solid #ca0020;
+  border-radius: 1.6rem;
+  padding: 0.6rem 1.3rem;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box .text-box-button:hover {
+  background-color: #ca0020;
+  color: #fff;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box-alt-1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  padding: 0;
+  text-align: center;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box-alt-1 .text-box-title {
+  color: #fff;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box-alt-2 {
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  padding: 0;
+  text-align: center;
+}
+.service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box-alt-2 .text-box-title {
+  color: #fff;
+}
+@media (max-width: 991.98px) {
+  .service .service-banner-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-bg {
+    width: 100%;
+    min-height: 320px;
+    object-fit: cover;
+  }
+  .service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box .text-box-title {
     font-size: 2rem;
   }
 }
