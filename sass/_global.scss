@@ -1001,6 +1001,56 @@ p {
       }
     }
   }
+  .list-address {
+    h3 {
+      text-align: center;
+      font-size: 3.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      color: $color-text;
+    }
+    .address-item {
+      &-img {
+        @include img-cover(56.25%);
+        border-radius: 6px;
+      }
+      &-content {
+        padding: 1.5rem 0;
+      }
+      &-info {
+        li {
+          position: relative;
+          padding: 5px 0 5px 20px;
+          color: #111;
+          &::before {
+            color: #fba311;
+            font-weight: 700;
+            position: absolute;
+            left: 0;
+            top: 7px;
+          }
+        }
+        &__address::before {
+          @include fa5("\f3c5");
+        }
+        &__email::before {
+          @include fa5("\f0e0");
+        }
+        &__phone::before {
+          @include fa5("\f8d3");
+        }
+      }
+      &-title {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        color: #0f1133;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 
 // page contact
