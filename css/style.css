@@ -1443,7 +1443,7 @@ p {
 }
 .service .service-banner-grid .service-banner-grid-item:last-child {
   grid-area: h6;
-  height: 11.2rem;
+  height: 40rem;
 }
 .service .service-banner-grid .service-banner-grid-item {
   overflow: hidden;
@@ -1466,12 +1466,12 @@ p {
   padding: 0 2rem;
 }
 .service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box .text-box-title {
-  color: #353030;
+  color: #fff;
   font-size: 2.465rem;
   font-weight: 500;
 }
 .service .service-banner-grid .service-banner-grid-item .service-banner-grid-item-text-box .text-box-sub-title {
-  color: #353030;
+  color: #fff;
   font-size: 1.275rem;
   font-weight: 500;
 }

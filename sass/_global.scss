@@ -1174,7 +1174,7 @@ p {
     }
     .service-banner-grid-item:last-child {
       grid-area: h6;
-      height: 11.2rem;
+      height: 40rem;
     }
     .service-banner-grid-item {
       overflow: hidden;
@@ -1195,12 +1195,12 @@ p {
         left: 2rem;
         padding: 0 2rem;
         .text-box-title {
-          color: #353030;
+          color: #fff;
           font-size: 2.465rem;
           font-weight: 500;
         }
         .text-box-sub-title {
-          color: #353030;
+          color: #fff;
           font-size: 1.275rem;
           font-weight: 500;
         }
