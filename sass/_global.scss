@@ -1945,3 +1945,32 @@ p {
 }
 
 // Product detail
+
+//New detail
+
+.new-content{
+  .new-content-title{
+    border-bottom: 2px solid $color-text;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    h2{
+      font-size: 2.72rem;
+      font-weight: 500;
+    }
+  }
+  .new-content-date{
+    color: grey;
+    margin-bottom: 1.5rem;
+    &::before{
+      @include fa5("\f017");
+    }
+  }
+  .new-content-detail{
+    p{
+      font-size: 1.4rem;
+    }
+  }
+
+}
+
+//New detail

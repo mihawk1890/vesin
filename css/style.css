@@ -2291,6 +2291,27 @@ p {
   display: none;
 }
 
+.new-content .new-content-title {
+  border-bottom: 2px solid #0f1133;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+.new-content .new-content-title h2 {
+  font-size: 2.72rem;
+  font-weight: 500;
+}
+.new-content .new-content-date {
+  color: grey;
+  margin-bottom: 1.5rem;
+}
+.new-content .new-content-date::before {
+  content: "\f017";
+  font-family: "Font Awesome 5 Pro";
+}
+.new-content .new-content-detail p {
+  font-size: 1.4rem;
+}
+
 .header {
   box-shadow: rgba(0, 0, 0, 0.15) 1px 1px 10px;
 }
